@@ -1,58 +1,58 @@
 
-# OSINT Google Dorks Automation Tool (mit Chrome)
+# OSINT Google Dorks Automation Tool (with Chrome)
 
-Ein kleines Python-Tool, um Google Dorks halbautomatisiert auszuführen und die gefundenen Links in eine Datei zu speichern.  
-Das Tool nutzt **Chrome (über undetected-chromedriver)** und führt die Abfragen **sichtbar im Browser aus**.
+A small Python tool to semi-automatically execute Google Dorks and save the found links into a file.  
+The tool uses **Chrome (via undetected-chromedriver)** and performs the queries **visibly in the browser**.
 
 ---
 
 ## Features
-- Führt Google-Dork-Suchen sichtbar im Chrome-Browser aus.
-- Extrahiert alle Treffer-Links automatisch.
-- Speichert alle Ergebnisse in `results.txt`.
-- Simuliert menschliches Verhalten (Delays).
+- Executes Google Dork searches visibly in the Chrome browser.
+- Automatically extracts all result links.
+- Saves all results to `results.txt`.
+- Simulates human-like behavior (delays).
 
 ---
 
-## Voraussetzungen
+## Requirements
 - Python 3.x
-- Google Chrome (muss lokal installiert sein)
-- Virtuelle Umgebung empfohlen
+- Google Chrome (must be installed locally)
+- Virtual environment recommended
 
 ---
 
 ## Setup
 
-1. Virtuelle Umgebung anlegen:
+1. Create a virtual environment:
 ```bash
 python -m venv venv
 venv\Scripts\activate  # Windows
 source venv/bin/activate  # Mac/Linux
 ```
 
-2. Abhängigkeiten installieren:
+2. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
 ---
 
-## Nutzung
+## Usage
 
-1. Trage deine Dorks in `dorks.txt` ein (eine Zeile pro Dork).
-2. Starte das Tool:
+1. Add your Dorks to `dorks.txt` (one Dork per line).
+2. Start the tool:
 ```bash
 python dorkscanner.py
 ```
 
-3. Es öffnet sich ein **sichtbares Chrome-Fenster**, die Dork-Abfrage wird ausgeführt.
-4. Gefundene Links werden:
-    - Im Terminal angezeigt.
-    - In `results.txt` gespeichert.
+3. A **visible Chrome window** will open, and the Dork search will be performed.
+4. Found links will be:
+    - Displayed in the terminal.
+    - Saved in `results.txt`.
 
 ---
 
-## Hinweise
-- **Das Chrome-Fenster bleibt während der Abfrage offen.**  
-- Dass die Dork-Suchanfragen wie z.B. `intitle:index of passwd` in der Suchleiste erscheinen, ist **normal und korrekt**.
-- Dieses Tool ist nur zu Lern- und Forschungszwecken gedacht. Exzessives Scraping kann gegen die Nutzungsbedingungen von Google verstoßen.
+## Notes
+- **The Chrome window remains open during the search.**  
+- Seeing Dork search queries like `intitle:index of passwd` in the search bar is **normal and expected**.
+- This tool is intended for educational and research purposes only. Excessive scraping may violate Google's terms of service.
